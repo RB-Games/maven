@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RB Games Maven repository</title>
+    <style>
+        :root {
+            --background: #f7f5f9;
+            --text: #3d3847;
+            --heading: #1c1922;
+            --accent: #d6334f;
+            --code-background: #ebe7ef;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background: #17151b;
+                --text: #a59fb3;
+                --heading: #f4f1f6;
+                --accent: #ff4d6d;
+                --code-background: #24212a;
+            }
+        }
+
+        body {
+            margin: 0;
+            padding: 48px 16px;
+            background: var(--background);
+            color: var(--text);
+            font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            color: var(--heading);
+            line-height: 1.25;
+        }
+
+        h1 span {
+            color: var(--accent);
+        }
+
+        a {
+            color: var(--accent);
+        }
+
+        pre, code {
+            font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+            font-size: 14px;
+        }
+
+        pre {
+            overflow-x: auto;
+            padding: 16px;
+            border-radius: 8px;
+            background: var(--code-background);
+            color: var(--heading);
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1><span>RB Games</span> Maven repository</h1>
+    <p>
+        The public APIs of RB Games plugins, for developers who build on them. Reading needs no account or token.
+        Released versions never change, and snapshots aren't published here.
+    </p>
+
+    <h2>Maven</h2>
+    <p>Add the repository to your <code>pom.xml</code>:</p>
+    <pre>&lt;repositories&gt;
+    &lt;repository&gt;
+        &lt;id&gt;rbgames&lt;/id&gt;
+        &lt;url&gt;https://repo.rbgames.be&lt;/url&gt;
+    &lt;/repository&gt;
+&lt;/repositories&gt;</pre>
+    <p>Then depend on a plugin's API, with the coordinates from that plugin's documentation:</p>
+    <pre>&lt;dependency&gt;
+    &lt;groupId&gt;be.rbgames&lt;/groupId&gt;
+    &lt;artifactId&gt;<em>plugin</em>-api&lt;/artifactId&gt;
+    &lt;version&gt;<em>version</em>&lt;/version&gt;
+    &lt;scope&gt;provided&lt;/scope&gt;
+&lt;/dependency&gt;</pre>
+
+    <h2>Gradle</h2>
+    <pre>repositories {
+    maven("https://repo.rbgames.be")
+}</pre>
+
+    <p>
+        This page has no file listing: the files are in the
+        <a href="https://github.com/RB-Games/maven">RB-Games/maven</a> repository.
+    </p>
+</main>
+</body>
+</html>
