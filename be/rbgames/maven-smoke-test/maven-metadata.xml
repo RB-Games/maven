@@ -3,7 +3,6 @@
   <groupId>be.rbgames</groupId>
   <artifactId>maven-smoke-test</artifactId>
   <versioning>
-    <latest>0.0.2</latest>
     <release>0.0.2</release>
     <versions>
       <version>0.0.1</version>
