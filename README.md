@@ -43,5 +43,5 @@ the files as they are). Nothing is added by hand: a plugin's release workflow ca
 artifact's `maven-metadata.xml` and commits `Publish <groupId>:<artifactId>:<version>`. It refuses snapshots and
 versions that are already published.
 
-`be.rbgames:maven-smoke-test` (0.0.1 and 0.0.2) is the smoke test of that workflow: an empty library to check that
+`be.rbgames:maven-smoke-test` (0.0.1 to 0.0.3) is the smoke test of that workflow: an empty library to check that
 a Maven build without any `settings.xml` resolves from here, also with strict checksums (`mvn -C`).
